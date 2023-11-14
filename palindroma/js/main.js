@@ -2,7 +2,8 @@
 
 // Variables
 
-const parola = prompt('Inserisci una parola:');
+let parola = prompt('Inserisci una parola o una frase:');
+let stringaTemp = '';
 
 // Functions
 
@@ -19,8 +20,11 @@ function palindroma(parola) {
 
 // Code
 
-if (palindroma(parola) === true) {
-  console.log(`La parola "${parola}" è palindroma!`);
+// Rimuovo tutti gli spazi all'interno della stringa
+stringaTemp = parola.replaceAll(' ', '');
+
+if (palindroma(stringaTemp) === true) {
+  console.log(`La parola o frase "${parola}" è palindroma!`);
 } else {
-  console.log(`La parola "${parola}" non è palindroma`);
+  console.log(`La parola o frase "${parola}" non è palindroma`);
 }
