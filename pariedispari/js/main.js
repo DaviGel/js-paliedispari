@@ -21,7 +21,7 @@ function evenOdd(somma) {
   }
 }
 
-// Code
+// Program
 
 while (scelta !== 'pari' && scelta !== 'dispari') {
   scelta = prompt(

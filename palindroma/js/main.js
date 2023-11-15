@@ -33,7 +33,7 @@ function palindroma(parola) {
   }
 }
 
-// Code
+// Program
 
 // Rimuovo tutti gli spazi all'interno della stringa
 stringaTemp = parola.replaceAll(' ', '');
