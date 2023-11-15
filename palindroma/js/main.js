@@ -9,7 +9,7 @@ let stringaTemp = '';
 
 function palindroma(parola) {
   let wordlength = parola.length - 1;
-  for (let i = 0; i < wordlength / 2; i++) {
+  for (let i = 0; i < parola.length / 2; i++) {
     if (parola[i] !== parola[wordlength]) {
       return false;
     }
