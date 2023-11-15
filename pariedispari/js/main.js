@@ -9,8 +9,8 @@ let somma = 0;
 
 // Functions
 
-function randomicNumber() {
-  return Math.floor(Math.random() * 5) + 1;
+function randomicNumber(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 function evenOdd(somma) {
@@ -37,7 +37,7 @@ while (numero < 1 || numero > 5 || isNaN(numero)) {
   );
 }
 
-numeroPC = randomicNumber();
+numeroPC = randomicNumber(1, 5);
 somma = numero + numeroPC;
 
 console.log(
