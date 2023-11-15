@@ -8,9 +8,8 @@ let stringaTemp = '';
 // Functions
 
 function palindroma(parola) {
-  if (parola.length === 0) {
-    return false;
-  } else {
+  if (parola.length === 0) return false;
+  else {
     // let wordlength = parola.length - 1;
     // for (let i = 0; i < parola.length / 2; i++) {
     //   if (parola[i] !== parola[wordlength]) {
@@ -22,12 +21,9 @@ function palindroma(parola) {
     let i = 0;
     let j = parola.length - 1;
     while (i < j) {
-      if (parola[i] !== parola[j]) {
-        return false;
-      } else {
-        i++;
-        j--;
-      }
+      if (parola[i] !== parola[j]) return false;
+      i++;
+      j--;
     }
     return true;
   }
